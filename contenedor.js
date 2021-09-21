@@ -26,11 +26,14 @@ class Contenedor {
     }
 
     /**
-     * Procedimiento interno para realizar el manejo de una excepcion
+     * Procedimiento interno para realizar el manejo de una excepcion.
+     * Modificacion Desafio 3: Lanza el error para que sea manejado por
+     * el servidor
      * @param {Error} error : Error ocurrido
      */
     #handleError(error){
-        console.error(`No pudo guardarse el archivo: ${error}`)
+        // console.error(`No pudo guardarse el archivo: ${error}`)
+        throw error
     }
 
     // Public

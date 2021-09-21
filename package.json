@@ -1,0 +1,23 @@
+{
+  "name": "coderhouse_desafio3",
+  "version": "1.0.0",
+  "description": "Servidor con Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dpoggio/Coderhouse_Desafio3.git"
+  },
+  "author": "Demian Poggio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dpoggio/Coderhouse_Desafio3/issues"
+  },
+  "homepage": "https://github.com/Dpoggio/Coderhouse_Desafio3#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
