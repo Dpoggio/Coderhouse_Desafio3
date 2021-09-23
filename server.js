@@ -21,7 +21,9 @@ server.on("error", error => console.log(`Error en servidor ${error}`))
 /**** Funciones ****/
 function handleError(error, res) {
     console.error(error.stack);
-    res.status(ERROR_CODE).send(ERROR_MSG);
+    res.status(ERROR_CODE).json({
+        error: ERROR_MSG
+    });
 };
 
 /**** Rutas ****/
