@@ -25,18 +25,6 @@ function handleError(error, res) {
 };
 
 /**** Rutas ****/
-app.get('/testError', (req, res) => {  
-    try{
-        throw new Error("errooooor!!!")
-    } catch (error) {
-        handleError(error, res)
-    }
-})
-
-app.get('/hello', (req, res, next) => {  
-   res.send('Mundos')
-})
-
 app.get('/productos', async (req, res) => {  
     try {
         const listaProductos = await productos.getAll()
