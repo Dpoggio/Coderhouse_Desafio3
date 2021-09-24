@@ -2,7 +2,7 @@ const Contenedor = require('./contenedor.js')
 const express = require('express')
 
 /**** CONSTANTES ****/
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 const ERROR_CODE = 500
 const ERROR_MSG = 'Error interno'
 const ARCHIVO_PRODUCTOS = 'resources/productos.txt'
